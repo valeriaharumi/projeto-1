@@ -41,9 +41,34 @@ h3{
     max-height: 400px;
     padding-bottom: 70px;   
     align-items: center ;
-    background: #4FFF9B;
     margin: auto;
     justify-content: center;
+    background-image: url(./fotos/tentativa-de-um-banner.png);
+    background-size: center, cover;
+    background-repeat: no-repeat,
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 5px;
+    
+}
+
+.icons{
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px 20px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.icons i{
+    margin:0 20px;
+    color: gray;
 }
 
 .container {
@@ -131,16 +156,85 @@ h3{
     }
 }
 
+.sobre{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.foto-sobre{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.texto-sobre{
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.texto-sobre h3{
+    font-size: 24px;
+}
+
+.habilidades{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.habilidades h2{
+    padding-bottom: 60px;
+}
+
+
+.icones-texto-hab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.habilidade{
+    max-width: 20%;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.habilidade i{
+    font-size: 30px;
+    color: gray;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.habilidade p{
+    justify-content: justify;
+}
+
 
 .meus-trabalhos{
-    margin-top: 30px;
+    margin-top: 50px;
    
 }
 
 h2.trabalho{
     font-size: 40px;
     color: gray;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .container-trabalhos{
@@ -179,43 +273,14 @@ h2.trabalho{
 }
 
 
-.sobre{
-    background: #4FFF9B;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
-.foto-sobre{
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.texto-sobre{
-    max-width: 40%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    
-}
-
-.texto-sobre h3{
-    font-size: 24px;
-}
 
 
 
 footer{
     width: 100%;
     height: 100vh;
-    max-height: 20px;   
-    background: rgb(42, 136, 82);
+    max-height: 20px;       
 
 }
 
