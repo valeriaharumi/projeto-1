@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -32,20 +33,68 @@ h3{
 
 }
 
-.banner{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header{
     width: 100%;
-    height: 100vh;
-    max-height: 400px;
-    padding-bottom: 70px;   
-    align-items: center ;
-    margin: auto;
-    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: ;
+}
+
+.barra-cima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+}
+
+.icons{
+    max-width: 100px;
+    justify-content: space-between;
+    font-size: 25px;
+    color: gray;
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner{
+    background-image: url("./fotos/banner.jpg");
+    background-position: top;
+    background-size: 100% cover;
+    padding: 0;
+}
+
+.banner-dentro{
+    padding: 150px 0;
+    text-align: right;
+
+}
+
+/*
+.banner{
+    width: 100%;
+    top: 0;
+    left: 0;
+    max-height: 400px;    
+    z-index: 99;
     background-image: url(./fotos/tentativa-de-um-banner.png);
-    background-size: center, cover;
-    background-repeat: no-repeat,
+    margin-bottom: 80px;
 }
 
 .cabecalho{
@@ -61,7 +110,6 @@ h3{
 .icons{
     font-size: 20px;
     padding: 5px;
-    margin: 20px 20px;
     justify-content: space-around;
     align-content: center;
 }
@@ -110,7 +158,6 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     padding-right: 20px;
     padding-left: 20px;
     margin: auto;
@@ -155,6 +202,7 @@ h3{
         
     }
 }
+*/
 
 .sobre{
     width: 100%;
@@ -165,7 +213,6 @@ h3{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .foto-sobre{
@@ -182,17 +229,21 @@ h3{
     
 }
 
-.texto-sobre h3{
-    font-size: 24px;
+.sobre h2{
+    padding-bottom: 50px;
 }
+
+
 
 .habilidades{
     margin-top: 80px;
     margin-bottom: 120px;
+    background-color: #a498fe ;
+    padding: 40px;
 }
 
 .habilidades h2{
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 
@@ -205,23 +256,24 @@ h3{
 }
 
 .habilidade{
-    max-width: 20%;
+    max-width: 15%;
     align-content: center;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
 }
 
 .habilidade i{
     font-size: 30px;
     color: gray;
-    align-items: center;
+    text-align: center;
     padding-bottom: 30px;
 
 }
 
 .habilidade p{
-    justify-content: justify;
+    text-align: center
 }
 
 
@@ -280,7 +332,8 @@ h2.trabalho{
 footer{
     width: 100%;
     height: 100vh;
-    max-height: 20px;       
+    max-height: 20px; 
+    background-color: #8073e4;      
 
 }
 
