@@ -7,35 +7,54 @@
     <script src="https://kit.fontawesome.com/f8b6ff215a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap" rel="stylesheet">
+    <script type=“text/javascript” src=“script.js”></script>
 </head>
 
 <body>
-    <header class="inicio">
-        <div class="container">
-            <div class="barra-cima">
+    <section class="banner" id="inicio">
+        <header>   
+        <div id="toggle" onclick="toggle()"></div>
+        </header>            
+        <div class="apresentação">
+            <div class="apresentação-ajuste">           
+                <div class="apresentação-texto">            
+                    <h2>Valéria Harumi</h2>
+                    <h1>Portfólio online</h1>
+                </div> 
                 <div class="icons">
                     <a href="https://www.facebook.com/harumi.nishimura.14"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://www.instagram.com/haruharuun/"><i class="fab fa-instagram-square"></i></a>
-                    <a href="www.linkedin.com/in/valéria-harumi-nishimura-1574191a2"><i class="fab fa-linkedin"></i></a>
-                </div>        
-                <nav class="menu-container">
-                    <div class="menu">           
-                        <a href="./index.html">Home</a>                
-                        <a href="./contato.html">Contato</a>
-                    </div>              
-                </nav>
-            </div>
-        </div>  
-    </header>
-    <section class="principal">
-        <section class="secao banner">
-            <div class="container">
-                <div class="banner-dentro">            
-                <h2>Valéria Harumi</h2>
-                <h1>Portfólio online</h1>
+                    <a href="https://www.linkedin.com/in/val%C3%A9ria-harumi-nishimura-1574191a2/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/valeriaharumi"><i class="fab fa-github-square"></i></a>
                 </div>
-            </div>
-       </section>
+            </div>             
+        </div>    
+        
+    </section>
+
+    <nav id="menu">
+        <ul>           
+            <li><a href="#">Home</a></li>                
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Trabalhos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>              
+    </nav>
+
+    <script type="text/javascript">
+            function toggle(){
+            var inicio = document.getElementById('inicio');
+            var menu = document.getElementById('menu')
+            inicio.classList.toggle('active');
+            menu.classList.toggle('active');
+
+    }
+        </script>
+
+
+
+    <section class="principal">
         
    
 
