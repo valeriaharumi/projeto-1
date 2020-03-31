@@ -1,3 +1,5 @@
+/*geral*/
+
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -10,8 +12,42 @@ body{
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     font-size: 10px;
-    line-height: 3rem;
 }
+
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.titulo-secao{
+    margin-top: 4rem;
+    text-align: center;
+    color: #7a7a7a;
+    
+}
+
+.titulo-secao h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 4rem;
+
+}
+
+.margem-direita{
+    margin-left: 1.5rem;
+ 
+}
+
+
+
+
+
+
 
 /*
 h1{
@@ -36,6 +72,9 @@ h3{
 
 
 */
+
+
+/* banner*/
 
 header{
     position: absolute;
@@ -201,69 +240,21 @@ header #toggle:after{
     
     .apresentação h1{        
         font-size: 2rem;        
-    }
-
-    
+    }    
 
 }
 
-
-/*
-.container {
-    width: 90%;
-    max-width: 1170px;
-    margin: 0 auto;
-}
+/* fim banner*/
 
 
-header{
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    border-bottom: 1px solid transparent;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: ;
-}
 
-.barra-cima{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 30px;
-}
-
-.icons{
-    max-width: 100px;
-    justify-content: space-between;
-    font-size: 25px;
-    color: gray;
-}
-
-.menu-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.banner{
-    background-image: url("./fotos/banner.jpg");
-    background-position: top;
-    background-size: 100% cover;
-    padding: 0;
-}
-
-.banner-dentro{
-    padding: 150px 0;
-    text-align: right;
-
-}
-*/
+/* sobre*/
 
 .sobre{
     width: 100%;
-    height: auto;
-    padding: 30px;
+    padding: 4.5rem;
+    margin-top: 100px;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -271,29 +262,197 @@ header{
     justify-content: center;
 }
 
-.foto-sobre{
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.texto-sobre{
-    max-width: 40%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+.foto-sobre img{    
+    margin-right: 1rem;
+    flex: 1;
+    width: 100%;
     
 }
 
-.sobre h2{
-    padding-bottom: 50px;
+.texto-sobre{
+    width: 40%;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    flex: 1;
+    
+}
+
+.titulo-secao-sobre h2{
+    padding-bottom: 30px;
+    font-size: 32px;
+    color: #7a7a7a;
+}
+
+/* fim sobre*/
+
+/* habilidades*/
+
+.habilidades{
+    background-color: #a498fe;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+
+}
+
+.icones-texto-hab{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+
+}
+
+.habilidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.icon-container{
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid #fffd73;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    display: flex;
+    border-radius: 50%;
+
+}
+
+.icon-container i{
+    color: #5c5c5c;
+    font-size: 1.8rem;
+    margin: auto;
+}
+
+.habilidade p{
+    font-size: 0.8rem;
+    line-height: 1.3rem;
 }
 
 
 
+/* fim habilidades*/
+
+
+/* trabalhos*/
+
+
+.primeiro-trabalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.explicação1 h3{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+}
+
+/* fim trabalhos*/
+
+
+/* contato*/
+
+.contato{
+    background-color: #a498fe;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1.2rem;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+}
+
+input[type="submit"]{
+    width: initial;
+    background-color: #fffd73;
+    padding: .5rem 1rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover{
+    color: #fff;
+    background-color: #8073e4;
+}
+
+
+/* fim contato*/
+
+
+
+/* footer*/
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #8073e4; 
+    padding: 1rem 0;
+    position: relative;     
+
+}
+footer p{
+    font-size: .6rem;
+}
+
+.up{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    top: -1.5rem;
+    right: 2rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+
+.up i{
+    color: #5c5c5c;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+/*animação*/
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 253, 115, 0.99);        
+    }
+    70%{
+        box-shadow: 0 0 0 1rem rgba(255, 253, 115, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 253, 115, 0);
+
+    }
+}
+
+
+/*
 .habilidades{
     margin-top: 80px;
-    margin-bottom: 120px;
+    min-height: 100vh;
     background-color: #a498fe ;
     padding: 40px;
 }
@@ -389,7 +548,4 @@ footer{
 
 }
 
-.pfooter{
-    text-align: center;
-    justify-content: center;
-}
+*/
