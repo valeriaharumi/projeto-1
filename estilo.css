@@ -355,6 +355,11 @@ header #toggle:after{
 
 }
 
+.explicação1 p{
+    font-size: .8rem;
+    max-width: 30rem;
+}
+
 /* fim trabalhos*/
 
 
@@ -425,9 +430,10 @@ footer p{
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
-.up i{
+.up a{
     color: #5c5c5c;
     font-size: 1.2rem;
     margin: auto;
@@ -446,6 +452,48 @@ footer p{
         box-shadow: 0 0 0 0 rgba(255, 253, 115, 0);
 
     }
+}
+
+/* media queries*/
+
+@media screen and (max-width: 768px){
+    .titulo-secao h2{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    
+    }
+
+    .primeiro-trabalho{
+        flex-direction: column;
+    }
+
+    .portfolio-img{
+        order: 1;
+    }
+
+    .explicação1{
+        order: 2;
+        text-align: center;
+    }
+
+    .explicação1 h3{
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    form{
+        width: 100%;
+    }
+
+    .up{
+        right: 1rem;
+    }
+
+
 }
 
 
