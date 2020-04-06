@@ -44,36 +44,6 @@ body{
 }
 
 
-
-
-
-
-
-/*
-h1{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 40px;
-
-}
-
-h2{
-    font-size: 32px;
-    color: #7a7a7a;
-
-}
-
-h3{
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #7a7a7a;
-
-}
-
-
-*/
-
-
 /* banner*/
 
 header{
@@ -349,13 +319,13 @@ header #toggle:after{
 }
 
 
-.explicação1 h3{
+.explicação h3{
     font-size: 1.2rem;
     margin-bottom: 2rem;
 
 }
 
-.explicação1 p{
+.explicação p{
     font-size: .8rem;
     max-width: 30rem;
 }
@@ -454,6 +424,32 @@ footer p{
     }
 }
 
+[data-anime]{
+    opacity: 0;
+    transition: .4s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+    
+}
+
+[data-anime="up"]{
+    transform: translate3d(0px, -50px, 0);
+    
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    
+}
+
 /* media queries*/
 
 @media screen and (max-width: 768px){
@@ -497,103 +493,3 @@ footer p{
 }
 
 
-/*
-.habilidades{
-    margin-top: 80px;
-    min-height: 100vh;
-    background-color: #a498fe ;
-    padding: 40px;
-}
-
-.habilidades h2{
-    padding-bottom: 80px;
-}
-
-
-.icones-texto-hab{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.habilidade{
-    max-width: 15%;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-
-}
-
-.habilidade i{
-    font-size: 30px;
-    color: gray;
-    text-align: center;
-    padding-bottom: 30px;
-
-}
-
-.habilidade p{
-    text-align: center
-}
-
-
-.meus-trabalhos{
-    margin-top: 50px;
-   
-}
-
-h2.trabalho{
-    font-size: 40px;
-    color: gray;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-}
-
-.container-trabalhos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.primeiro-trabalho{
-    box-shadow: 1px 1px 5px gray;
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 80px;
-    transition: all 0.5s ease;    
-    padding-bottom: 35px;
-    color: #7a7a7a;
-
-    max-width: 500px;
-    
-    
-    
-}
-
-.primeiro-trabalho:hover{
-    box-shadow: 4px 4px 10px gray;
-}
-
-.explicação1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
-
-}
-
-
-footer{
-    width: 100%;
-    height: 100vh;
-    max-height: 20px; 
-    background-color: #8073e4;      
-
-}
-
-*/
