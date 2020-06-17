@@ -8,29 +8,16 @@
     <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap" rel="stylesheet">
     
-    <script>
-        $('nav a').click(function(e){
-            e.preventDefault();
-            var id = $(this).attr('href'),
-                targetOffset = $(id).offset().top,
-                menuHeight = $('nav').innerHeight();
-
-            
-
-            $('html, body').animate({
-                scrollTop: targetOffset 
-            }, 500);
-        });
-
-    </script>
-    
+       
 
 </head>
 
 <body>
-    <section class="banner" id="inicio">
+    <section class="banner" id="inicio">        
         <header>   
-        <div id="toggle" onclick="toggle()"></div>
+        <div id="toggle">
+            <i id="botaomenu" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
         </header>            
         <div class="apresentação">
             <div class="apresentação-ajuste">           
@@ -41,13 +28,15 @@
                 <div class="icons">
                     <a href="https://www.facebook.com/harumi.nishimura.14" target="_blank"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://www.instagram.com/haruharuun/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-                    <a href="https://www.linkedin.com/in/val%C3%A9ria-harumi-nishimura-1574191a2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/valéria-harumi/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/valeriaharumi" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="mailto:haruumi.nishimura@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>             
         </div>        
     </section>
     <nav id="menu">
+        <i class="fas fa-times"></i>
         <ul>           
             <li><a href="#inicio">Home</a></li>                
             <li><a href="#about">Sobre</a></li>
@@ -57,15 +46,6 @@
         </ul>              
     </nav>
 
-   <script type="text/javascript">
-        function toggle(){
-        var inicio = document.getElementById('inicio');
-        var menu = document.getElementById('menu')
-        inicio.classList.toggle('active');
-        menu.classList.toggle('active');
-
-        }
-    </script>
 
 
     <section class="sobre" id="about">
@@ -74,7 +54,7 @@
         </div>
         <div class="texto-sobre">
             <div class="titulo-secao-sobre">
-                <h2> Sobre</h2>
+                <h2> SOBRE</h2>
             </div>
             <p>Natural de Londrina/PR <br>
             Formada em Arquitetura e Urbanismo pela UEL (Universidade Estadual de Londrina) <br>
@@ -83,6 +63,7 @@
             Meu sonho era ser poliglota, tenho facilidade para aprender idiomas, falo Português, Inglês, Japonês um pouco de Espanhol e já aprendi o alfabeto Coreano <br>
             Sempre em busca de aprender coisas novas, explorar lugares, sabores e experiências <br>
             Desenhista no tempo livre, retratos na maioria</p>
+            <a href="">Download CV</a>
         </div>
     </section>
 
@@ -90,33 +71,27 @@
     <section class="habilidades" id="skills">
         <div class="container">       
             <div class="titulo-secao">
-                <h2 class="trabalho" data-anime="up">Habilidades</h2>
+                <h2 class="trabalho" >Habilidades</h2>
             </div>
             <div class="icones-texto-hab">
-                <div class="habilidade" data-anime="up">
-                    <div class="icon-container">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
-                    <p>Domínio de desenho arquitetônico e tecnologias relacionadas a arquitetura como autoCAD, SketchUp, Lumion e V-ray</p>
-                </div>
-                <div class="habilidade" data-anime="up">
-                    <div class="icon-container">
-                        <i class="fas fa-photo-video"></i>
-                    </div>
-                    <p>Edição e manipulação de foto e vídeos com Photoshop, SonyVegas, adobe premiere e conhecimento básico de after effects</p>
-                </div>
-                <div class="habilidade" data-anime="up">
+                <div class="habilidade" >
                     <div class="icon-container">
                         <i class="fas fa-pencil-ruler"></i>
                     </div>
-                    <p>Desenho a mão livre, aprendendo o digital. Meus desenhos são principalmente figura humana e animais</p>
+                    <p>Desenvolvimento Web Front-End, conhecimento de HTML, CSS, Sass, JavaScript, Angular e React e experiência no uso de ferramentas de metodologia ágil como Scrum e Kanban</p>
                 </div>
-                <div class="habilidade" data-anime="up">
+                <div class="habilidade" >
                     <div class="icon-container">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-photo-video"></i>
                     </div>
-                    <p>Atualmente estudando programação voltada ao front-end na Cocreare Academy</p>
+                    <p>Experiencia em edição e manipulação de foto e vídeos com Photoshop, SonyVegas, Adobe Premiere e conhecimento básico de After Effects.</p>
                 </div>
+                <div class="habilidade" >
+                    <div class="icon-container">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <p>Domínio de desenho arquitetônico e tecnologias relacionadas a arquitetura como autoCAD, SketchUp, Lumion e V-ray, desenho a mão livre e digital.</p>
+                </div>                
             </div>
         </div>        
     </section>
@@ -124,104 +99,98 @@
 
 
     <section class="meus-trabalhos" id="works">
+        <div class="bg-modal"></div>
         <div class="titulo-secao">
-        <h2 class="trabalho" data-anime="up">Meus trabalhos</h2>
+        <h2 class="trabalho" >Meus trabalhos</h2>
         </div>
         <div class="container">            
-            <div class="primeiro-trabalho">
-                <div class="portfolio-img" data-anime="left">                                    
-                    <img height="200px" src="./fotos/VISTA_7.jpg"/>
-                </div>
-                <div class="explicação 1 margem-direita" data-anime="right">
-                    <h3>Casa "Denshinkantei"</h3>            
-                    <p>TFGI - Trabalho Final de Graduação Integrado<br>
-                    Proposta de uma casa de chá "flutuante" 
-                    em um lago dentro do terreno da ACEL (Associação Cultural e Esportiva de Londrina)
-                    Jogo entre moderno e tradicional na escolha dos materiais e formas</p>
-                </div>  
-            </div>
-
-            <div class="primeiro-trabalho">
-                <div class="explicação 2" data-anime="left">
-                    <h3>Expo Japão 2018</h3>
-                    <p> Projeto do espaço para realização de cerimônia do chá, jardim e folheto informativo além da adição de novo mobiliário fabricado por artesões locais.
-                    </p>
-                </div>  
-                <div class="portfolio-img margem-direita" data-anime="right">
-                    <img height="222px" src="./fotos/casa.jpg"/>
-                </div>
-                            
-            </div>
-                
-            <div class="primeiro-trabalho" data-anime="left">
-                <div class="portfolio-img ">
-                    <img height="200px" src="./fotos/5DIAS.jpg" />
-                    <img height="200px" src="./fotos/comida.jpg"/>
-                </div>
-                <div class="explicação 3 margem-direita" data-anime="right">            
-                    <h3>Arte para divulgação do <br> Natsu Matsuri 2018</h3>
-                    <p>Criação de posts informativos para divulgar o evento Natsu Matsuri em São Paulo, realizado pela turma de bolsistas de 2018 </p>
-            </div>
-            
-            </div>
-            <div class="primeiro-trabalho">
-                <div class="explicação 4" data-anime="left">  
-                    <h3>Vídeos para divulgação do <br> Koshukai 2020</h3>
-                    <p>Edição de vídeo para divulgação do Koshukai, um vídeo explicando o que é o Koshukai + série com 10 vídeos de entrevistas com participantes de anos anteriores</p>
-                </div>  
-                <div class="portfolio-img margem-direita" data-anime="right">
-                    <img height="200px" src="./fotos/printvideo2.jpg"/>
-                </div>
-                        
-            
-            </div>            
+            <li class="modal-trigger" data-modal="cwvf">
+                <img src="./fotos/cwvf-loona-2-print.png" alt="">
+                <h2>Cwvf</h2>
+                <h3>Angular</h3>
+            </li>
+            <li class="modal-trigger" data-modal="app4">
+                <img src="./fotos/app4front-print.png" alt="">
+                <h2>App4front</h2>
+                <h3>React</h3>
+            </li>
+            <li class="modal-trigger" data-modal="covid">
+                <img src="./fotos/monitor-doacoes-print.png" alt="">
+                <h2>Monitor das Doações</h2>
+                <h3>React</h3>
+            </li>
+            <!--<li class="modal-trigger">
+                <img src="./fotos/" alt="">
+                <h2>Restaurante Mirante do Lago</h2>
+                <h3>HTML, CSS</h3>
+            </li>-->                 
+                     
         </div>
+
+        <!--modals-->
+       
+        <div class="modal cwvf">         
+            
+            <div class="conteudo-modal">
+                <span class="close-icon modal-close">X</span>
+                <div class="img-modal">
+                    <img src="./fotos/cwvf-loona-2-print.png" alt="">
+                </div>
+                <div class="texto-modal">
+                    <h2>Cwvf</h2>
+                    <p><strong>Descrição: </strong> Primeiro projeto em grupo realizado na capacitação da Cocreare Academy</p>
+                    <p><strong>Objetivo: </strong> O objetivo do projeto era desenvolver uma página web responsiva para visualização de mensagens e imagens com integração com a API do Twitter.</p>
+                    <p><strong>Tecnologia: </strong>Criado usando o framework Angular, com API do Twitter</p> 
+                    <p><strong>Equipe: </strong>Benício Gomes, Carlos Ribeiro, Fabrício Santos, Valéria Harumi e Wesley Câmara</p> 
+                    <p><strong>Aprendizado: </strong>Divisão do trabalho em sprints, uso de ferramentas de gestão de trabalho como o trello e primeira experiência de trabalho em equipe remoto, primeiro contato com uma API externa e uso em equipe do git.</p>
+                    <a href="https://cwvf.netlify.app/home" target="_blank">Visite o site</a>                    
+                </div>
+            </div>        
+        </div>
+
+        <div class="modal app4">            
+            
+            <div class="conteudo-modal">
+                <span class="close-icon modal-close">X</span>
+                <div class="img-modal">
+                    <img src="./fotos/app4front-print.png" alt="">
+                </div>
+                <div class="texto-modal">
+                    <h2>App4front</h2>
+                    <p><strong>Descrição: </strong> Projeto legado, recebemos o projeto pronto em Angular e fizemos a migração para React.</p>
+                    <p><strong>Objetivo: </strong> Simulação do que acontece no mundo real, mexendo num código que não foi feito por nós e migrando para outra tecnologia.</p>
+                    <p><strong>Tecnologia: </strong>React, com API Airtable</p> 
+                    <p><strong>Equipe: </strong>Benício Gomes, Carlos Ribeiro, Fabrício Santos, Valéria Harumi e Wesley Câmara</p> 
+                    <p><strong>Aprendizado: </strong>Importância de um código bem comentado para que outros possam colaborar no seu código sem problemas também.</p>
+                    <a href="https://compassionate-tereshkova-e63f21.netlify.app/" target="_blank">Visite o site</a>                    
+                </div>
+            </div>        
+        </div>
+
+        <div class="modal covid">           
+            
+            <div class="conteudo-modal">
+                <span class="close-icon modal-close">X</span>
+                <div class="img-modal">
+                    <img src="./fotos/monitor-doacoes-print.png" alt="">
+                </div>
+                <div class="texto-modal">
+                    <h2>Monitor das Doações COVID-19</h2>
+                    <p><strong>Descrição: </strong> Melhoria do visual do site monitor das doações de covid-19 e automatização das atualizações dos dados.</p>
+                    <p><strong>Objetivo: </strong> Trabalhar em um projeto de clientes reais</p>
+                    <p><strong>Tecnologia: </strong>React, com API do Google Sheets, biblioteca Highcharts, i18n para site bilingue </p> 
+                    <p><strong>Equipe: </strong>Rafael Santos, Mariana Storoni, Thiago Dutra, Valéria Harumi e Wesley Câmara</p> 
+                    <p><strong>Aprendizado: </strong>Estimativa de horas gastas vs contagem das horas gastas, uso de novas bibliotecas e API, a emoção de conseguir produzir algo que vai ser usado no mundo real.</p>
+                    <a href="https://monitordasdoacoes.netlify.app/pt" target="_blank">Visite o site</a>                    
+                </div>
+            </div>        
+        </div>
+        
+        
+
     </section>
 
-    <script>
-        
-        const debounce = function(func, wait, immediate) {
-            let timeout;
-            return function(...args) {
-                const context = this;
-                const later = function () {
-                timeout = null;
-                if (!immediate) func.apply(context, args);
-                };
-                const callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func.apply(context, args);
-            };
-        };
-
-        const target = document.querySelectorAll('[data-anime]');
-        const animationClass = 'animate';
-
-        function animeScroll() {
-            const windowTop = window.pageYOffset + (window.innerHeight * 0.85);
-            target.forEach((element) => {
-                console.log('i')
-                if(windowTop > element.offsetTop) {
-                element.classList.add(animationClass);
-                } else {
-                element.classList.remove(animationClass);
-                }
-            })
-        }
-        
-        animeScroll();
-
-        const handleScroll = debounce(animeScroll, 200);
-
-        if(target.length) {
-        window.addEventListener('scroll', handleScroll);
-        }
-
-        
-    </script>    
-
-
+    
 
     <section class="contato" id="contact">
         <div class="titulo-secao">
@@ -253,11 +222,9 @@
             &copy; 2020 Valéria Harumi
         </p>     
     </footer>
+    
 
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type=“text/javascript” src=“meuscript.js”></script>
-
-   
+   <script type="text/javascript" src="js/toogleMenu.js"></script>
 
 </body>
 </html>
