@@ -247,6 +247,10 @@ header #toggle i{
     
 }
 
+.texto-sobre p{
+    margin: .5rem 0 ;
+}
+
 .texto-sobre a{
     margin-top: 1rem;
     background: #a498fe;
@@ -258,6 +262,7 @@ header #toggle i{
     color: white;
     font-weight: bold;
 }
+
 
 .texto-sobre a:hover{
     background: #8576f3;
@@ -338,7 +343,7 @@ header #toggle i{
 }
 
 .modal-trigger{
-    background-color: #fffd73;
+    background-color: #d1d1d1;    
     padding-bottom: 10px;
     box-shadow: 5px 5px 5px gray;
 }
@@ -382,7 +387,7 @@ header #toggle i{
 
 .bg-modal {
     position: fixed;
-    background: gray;
+    background: #7a7a7a;
     top: 0;
     left: 0;
     z-index: -5;    
@@ -392,7 +397,7 @@ header #toggle i{
 }
 
 .bg-modal.active{
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: 2;
 }
 
