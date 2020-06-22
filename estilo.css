@@ -222,8 +222,7 @@ header #toggle i{
 
 .sobre{
     width: 100%;
-    padding: 4.5rem;
-    margin-top: 100px;
+    padding: 4rem;
     min-height: 100vh;
     display: flex;
     flex-direction: row;
@@ -240,15 +239,15 @@ header #toggle i{
 }
 
 .texto-sobre{
-    width: 40%;
+    width: 45%;
     line-height: 1.5rem;
     font-size: 0.8rem;
     flex: 1;
-    
+    min-width: 45%;
 }
 
 .texto-sobre p{
-    margin: .5rem 0 ;
+    margin: .6rem 0 ;
 }
 
 .texto-sobre a{
@@ -287,7 +286,7 @@ header #toggle i{
 
 .icones-texto-hab{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2.5rem;
     text-align: center;
 
@@ -295,6 +294,7 @@ header #toggle i{
 
 .habilidade{
     display: flex;
+    min-width: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -332,13 +332,14 @@ header #toggle i{
 /* trabalhos*/
 
 .meus-trabalhos{
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     position: relative;
 }
 
 .meus-trabalhos .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
 }
 
@@ -487,7 +488,30 @@ header #toggle i{
     box-shadow: 5px 5px 5px gray;
 }
 
+@media (max-width: 767px){
 
+    .sobre{
+        padding: 4rem 2rem;
+    }
+    .meus-trabalhos{
+        margin-bottom: 2rem;
+    }
+
+   
+
+    .modal{
+        width: 80vw;
+        height: 95vh;
+    }
+
+    .modal .img-modal{
+        display: none;
+    }
+
+    .modal .texto-modal{
+        width: 90%;
+    }
+}
 
 /* fim trabalhos*/
 
@@ -618,18 +642,6 @@ footer p{
     
     }
 
-    .primeiro-trabalho{
-        flex-direction: column;
-    }
-
-    .portfolio-img{
-        order: 1;
-    }
-
-    .explicação1{
-        order: 2;
-        text-align: center;
-    }
 
     .explicação1 h3{
         text-align: center;
